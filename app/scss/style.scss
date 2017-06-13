@@ -1,0 +1,77 @@
+html{
+
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.tiles{
+		width: 600px;
+		height: 600px;
+		background-color: #000;
+		float: left;
+		padding: 1%; 
+		.box{
+			width: 46%;
+			height: 46%;
+			background-color: #fff;
+			display: block;
+			float: left;
+			margin: 2%;
+			opacity: 0.5;
+			&.yellow{
+				background-color: yellow;
+			}
+			&.red{
+				background-color: red;
+			}
+			&.blue{
+				background-color: blue;
+			}
+			&.green{
+				background-color: green;
+			}
+			&.active{
+				opacity: 1;
+			}
+		}
+		.flash {
+		  -webkit-transition: all 1s ease;  
+		  -moz-transition: all 1s ease;  
+		  -o-transition: all 1s ease;  
+		  -ms-transition: all 1s ease;  
+		  transition: all 1s ease;
+		}
+	}
+	.score-board{
+		float: right;
+		width: 400px;
+		margin-right: 50px;
+		table{
+			border-collapse: collapse;	
+			.header{
+				text-align: left;
+				background-color: red;
+				color: #fff;
+				th{
+					width: 200px;
+					padding: 5px;
+				}
+
+			}
+			tr{
+
+				background-color: #ececec;
+				&:first-child{
+					background-color: red;
+				}
+				&:nth-child(2n+3){
+					background-color: #ccc;
+				}
+			}
+			td{
+				padding: 5px;
+			}
+		}
+	}
+
+}

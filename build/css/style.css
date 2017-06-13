@@ -1,0 +1,52 @@
+html .container {
+  width: 1200px;
+  margin: 0 auto; }
+
+html .tiles {
+  width: 600px;
+  height: 600px;
+  background-color: #000;
+  float: left;
+  padding: 1%; }
+  html .tiles .box {
+    width: 46%;
+    height: 46%;
+    background-color: #fff;
+    display: block;
+    float: left;
+    margin: 2%;
+    opacity: 0.5; }
+    html .tiles .box.yellow {
+      background-color: yellow; }
+    html .tiles .box.red {
+      background-color: red; }
+    html .tiles .box.blue {
+      background-color: blue; }
+    html .tiles .box.green {
+      background-color: green; }
+    html .tiles .box.active {
+      opacity: 1; }
+  html .tiles .flash {
+    transition: all 1s ease; }
+
+html .score-board {
+  float: right;
+  width: 400px;
+  margin-right: 50px; }
+  html .score-board table {
+    border-collapse: collapse; }
+    html .score-board table .header {
+      text-align: left;
+      background-color: red;
+      color: #fff; }
+      html .score-board table .header th {
+        width: 200px;
+        padding: 5px; }
+    html .score-board table tr {
+      background-color: #ececec; }
+      html .score-board table tr:first-child {
+        background-color: red; }
+      html .score-board table tr:nth-child(2n+3) {
+        background-color: #ccc; }
+    html .score-board table td {
+      padding: 5px; }

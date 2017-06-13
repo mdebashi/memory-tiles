@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="mtApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <body ng-controller="mainCtrl">
+        <div class="container">
+            <div class="tiles">
+                <span ng-repeat="item in boxArray">
+                    <div class="box flash {{item.colour}}" ng-class="{'active' : item.flashed, 'inactive' : !item.flashed}" ng-click="flash(item)">
+                    </div>                    
+                </span>
+            </div>
+            <div class="score-board">
+                <table>
+                    <tbody>
+                        <tr class="header">
+                            <th>Round</th>
+                            <th>Ponits</th>
+                        </tr>
+                        <tr>
+                            <td>Round 1</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Round 2</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
